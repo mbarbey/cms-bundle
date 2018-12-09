@@ -1,0 +1,39 @@
+{
+	"name" : "mbarbey/cms-bundle",
+	"type" : "symfony-bundle",
+	"description" : "Basic Symfony CMS bundle",
+	"homepage" : "https://github.com/mbarbey/cms-bundle",
+	"license" : "MIT",
+	"keywords": ["CMS", "symfony", "bundle", "page"],
+	"authors" : [
+		{
+			"name" : "Michael Barbey",
+			"email" : "michael@barbey-family.ch"
+		}
+	],
+	"require": {
+		"symfony/framework-bundle": "^4.1",
+		"symfony/security-bundle": "^4.1",
+		"symfony/doctrine-bridge": "^4.1",
+		"symfony/validator": "^4.1",
+		"symfony/twig-bundle": "^4.1"
+	},
+	"require-dev": {
+		"symfony/phpunit-bridge": "^4.1",
+		"symfony/yaml": "^4.1",
+		"phpunit/phpunit": "^7.4"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Mbarbey\\CmsBundle\\" : ""
+		},
+		"exclude-from-classmap" : [
+			"/Tests/"
+		]
+	},
+	"autoload-dev": {
+        "psr-4": {
+            "Mbarbey\\CmsBundle\\Tests\\": "/Tests/"
+        }
+	}
+}
